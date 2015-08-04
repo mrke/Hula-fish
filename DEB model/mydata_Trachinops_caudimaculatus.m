@@ -67,20 +67,20 @@ metadata.address  = {'affiliation, zipcode, country'};   % affiliation, postcode
 % here assumed to be equal for all real data; the value of f is specified in pars_init_my_pet.
 
 % age 0 is at onset of embryo development
-data.ab = 15;      units.ab = 'd';    label.ab = 'age at birth';                bibkey.ab = 'MollCano2010';    
+data.ab = 10;      units.ab = 'd';    label.ab = 'age at birth';                bibkey.ab = 'MollCano2010';    
   temp.ab = T_C + 12;  % K, temperature 
   % observed age at birth is frequently larger than ab, because of diapauzes during incubation
 
 % age 0 is at onset of embryo development
-data.aj = 100;      units.aj = 'd';    label.aj = 'age at birth';                bibkey.aj = 'MollCano2010';    
+data.aj = 40;      units.aj = 'd';    label.aj = 'age at metamorphosis';       bibkey.aj = 'null';    
   temp.aj = T_C + 13;  % K, temperature 
 % observed age at birth is frequently larger than ab, because of diapauzes during incubation
 
-data.ap = 200;     units.ap = 'd';    label.ap = 'age at puberty';              bibkey.ap = 'Anon2015';
+data.ap = 160;     units.ap = 'd';    label.ap = 'age at puberty';              bibkey.ap = 'Anon2015';
   temp.ap = T_C + 15;  % K, temperature 
   % observed age at puberty is frequently larger than ap, 
   %   because allocation to reproduction starts before first eggs appear
-data.am = 6*365;     units.am = 'd';    label.am = 'life span';                   bibkey.am = 'Wiki';   
+data.am = 6*365;     units.am = 'd';    label.am = 'life span';                 bibkey.am = 'Wiki';   
   temp.am = T_C + 14;  % K, temperature 
 % (accounting for aging only) 
 
@@ -90,6 +90,7 @@ data.am = 6*365;     units.am = 'd';    label.am = 'life span';                 
 % how the value was chosen, see the last column of the Lb data set for an
 % example
 data.Lb  = 0.45;   units.Lb  = 'cm';   label.Lb  = 'snout to vent length at birth';    bibkey.Lb  = 'Anon2015'; comment.Lb  = 'mean value taken from several measurements';
+data.Lj  = 2;   units.Lj  = 'cm';   label.Lj  = 'snout to vent length at metamorphosis';  bibkey.Lp  = {'Anon2015','Wiki'}; % for multiple references, please use commas to separate references
 data.Lp  = 3.8;   units.Lp  = 'cm';   label.Lp  = 'snout to vent length at puberty';  bibkey.Lp  = {'Anon2015','Wiki'}; % for multiple references, please use commas to separate references
 data.Li  = 12.0;   units.Li  = 'cm';   label.Li  = 'ultimate snout to vent length';    bibkey.Li  = 'Wiki';
 data.Wdb = 1.26e-5/5; units.Wdb = 'g';    label.Wdb = 'dry weight at birth';              bibkey.Wdb = 'Anon2015';
