@@ -20,8 +20,8 @@ estim_options('default'); % runs estimation, uses nmregr method and filter
 %                     2 - saves to .mat file and writes .html file
 %                     (prints results to screen using a customized results file when there is one)
 
-estim_options('max_step_number',5e4); % set options for parameter estimation
-estim_options('max_fun_evals',5e3);  % set options for parameter estimation
+estim_options('max_step_number',5e5); % set options for parameter estimation
+estim_options('max_fun_evals',5e5);  % set options for parameter estimation
 
 estim_options('pars_init_method', 2);
 estim_options('results_output', 1);
