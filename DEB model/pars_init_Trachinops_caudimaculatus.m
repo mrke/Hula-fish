@@ -29,6 +29,12 @@ par.T_A = 9800;     free.T_A   = 0; units.T_A = 'K';        label.T_A = 'T_A';  
 par.del_M = 0.1209; free.del_M = 1; units.del_M = '-'; label.del_M = 'del_M_SL'; % shape coefficient for standard length
 par.del_M_TL = 0.1707; free.del_M_TL = 1; units.del_M_TL = '-'; label.del_M_TL = 'del_M_TL'; % shape coefficient for total length
 
+
+% par.T_AL   = 50000;   free.T_AL   = 0;   units.T_AL = 'K';       label.T_AL = 'T_AL';      % Arrhenius temperature
+% par.T_AH   = 90000;   free.T_AH   = 0;   units.T_AH = 'K';       label.T_AH = 'T_AH';      % Arrhenius temperature
+% par.T_L   = T_C+0;   free.T_L   = 0;    units.T_L = 'K';        label.T_L = 'T_L';      % Arrhenius temperature
+% par.T_H   = T_C+34;   free.T_H   = 0;    units.T_H = 'K';        label.T_H = 'T_H';      % Arrhenius temperature
+
 % Environmental parameters (temperatures are in data)
 par.f    = 1.0;     free.f     = 0; units.f    = '-';       label.f = 'f';         % scaled functional response for 0-var data
 par.f_tL = 0.86;    free.f_tL  = 0; units.f_tL = '-';       label.f_tL = 'f_tL';         % scaled functional response for 0-var data
